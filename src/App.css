@@ -1,0 +1,75 @@
+.bgrd.c01d {
+    background-image: url(/images/bgImages/clear-sky.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bgrd.c01n {
+    background-image: url(/images/bgImages/Nclear-sky.jpg);
+}
+
+.bgrd.c02d {
+    background-image: url(/images/bgImages/few-clouds.jpg);
+}
+
+.bgrd.c02n {
+    background-image: url(/images/bgImages/Nfew-clouds.jpg);
+}
+
+.bgrd.c03d {
+    background-image: url(/images/bgImages/scatterd-clouds.jpg);
+}
+
+.bgrd.c03n {
+    background-image: url(/images/bgImages/Nscatterd-clouds.jpg);
+}
+
+.bgrd.c04d {
+    background-image: url(/images/bgImages/Nbroken-clouds.jpg);
+}
+
+.bgrd.c04n {
+    background-image: url(public\images\bgImages\Nbroken-clouds.jpg);
+}
+
+.bgrd.c09d {
+    background-image: url(/images/bgImages/shower-rain.jpg);
+}
+
+.bgrd.c09n {
+    background-image: url(/images/bgImages/shower-rain.jpg);
+}
+
+.bgrd.c10d {
+    background-image: url(/images/bgImages/rain.jpg);
+}
+
+.bgrd.c10n {
+    background-image: url(/images/bgImages/Nrain.jpg);
+}
+
+.bgrd.c11d {
+    background-image: url(/images/bgImages/thunderstorm.jpg);
+}
+
+.bgrd.c11n {
+    background-image: url(/images/bgImages/Nthunderstorm.jpg);
+}
+
+.bgrd.c13d {
+    background-image: url(/images/bgImages/snow.jpg);
+}
+
+.bgrd.c13n {
+    background-image: url(/images/bgImages/Nsnow.jpg);
+}
+
+.bgrd.c50d {
+    background-image: url(/images/bgImages/mist.jpg);
+}
+
+.bgrd.c50n {
+    background-image: url(/images/bgImages/mist.jpg);
+}
+
