@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import Weather from "./components/Weather";
+import Loader from "./components/Loader";
 
 function App() {
   const [weatherInfo, setWetherInfo] = useState(null);
@@ -69,9 +70,9 @@ function App() {
 
   return (
     <main className={`min-h-screen bg-black bg-cover bg-center text-white flex justify-center items-center font-principal-font p-2 bgrd`}
-    style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : { backgroundColor: "black" }}>
+    style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : { backgroundColor: "rgb(10, 59, 97)" }}>
 
-        <Weather weatherInfo={weatherInfo} />
+        {weatherInfo ? <Weather weatherInfo={weatherInfo} /> : <Loader /> }
 
     </main>
   );
