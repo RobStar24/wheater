@@ -83,8 +83,10 @@ const Weather = ({ weatherInfo }) => {
           </article>
         </section>
       </section>
-
-      <button onClick={handleChangeTemperature}>Change F / C</button>
+      <div className="items-center">       
+      <button className="button-47 items-center"
+      onClick={handleChangeTemperature}>Change °F / °C</button>
+      </div> 
     </section>
   );
 };

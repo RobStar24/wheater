@@ -43,10 +43,12 @@ function App() {
       return '/images/bgImages/mist.jpg'
     } else if (weatherCode === '50n') {
       return '/images/bgImages/mist.jpg'
+    } else {
+      return null
     }
   };
 
-  const backgroundImage = getBgImage(weatherInfo?.weather[0].icon)
+  const backgroundImage = weatherInfo?.weather && weatherInfo?.weather[0]?.icon ? getBgImage(weatherInfo.weather[0].icon) : null;
 
   const success = (pos) => {
     const lat = pos.coords.latitude;
@@ -58,7 +60,7 @@ function App() {
     axios
       .get(URL)
       .then(({ data }) => setWetherInfo(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log('error con la API'));
   };
 
   useEffect(() => {
@@ -67,7 +69,7 @@ function App() {
 
   return (
     <main className={`min-h-screen bg-black bg-cover bg-center text-white flex justify-center items-center font-principal-font p-2 bgrd`}
-    style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : 'background-color: black'}>
+    style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : { backgroundColor: "black" }}>
 
         <Weather weatherInfo={weatherInfo} />
 
