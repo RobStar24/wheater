@@ -22,7 +22,7 @@ const Weather = ({weatherInfo}) => {
 
                 <h3 className="col-span-2 capitalize">{weatherInfo?.weather[0].description}</h3>
 
-                <span className="text-4xl">{isCelsius ? `${(weatherInfo?.main.temp).toFixed(1)}°C` : `${(((weatherInfo?.main.temp) * 1.8) + 32).toFixed(1)} °F`}</span>
+                <span className="text-4xl">{isCelsius ? `${(weatherInfo?.main.temp)}°C` : `${(((weatherInfo?.main.temp) * 1.8) + 32)} °F`}</span>
 
                 <div>
                     <img src={`https://openweathermap.org/img/wn/${weatherInfo?.weather[0].icon}@4x.png`} alt="" />
